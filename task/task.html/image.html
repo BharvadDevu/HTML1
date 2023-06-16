@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .a{
+            height: 400px;
+            width: 800px;
+            background: url(https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bot_2.jpg);
+            background-size: cover;
+            position: relative;
+            overflow: hidden;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            text-transform: capitalize;
+            word-spacing: 5px;
+            letter-spacing: 4px;
+            
+            
+            
+        }
+        .b{
+            height: 400px;
+            width: 800px;
+            background:rgba(0,0,0,0.2);
+            position: absolute;
+            right:100%;
+            top: 100%;
+            transition: 1s;
+            
+           
+           
+        }
+        .a:hover .b{
+           right: 0%;
+           top:0%;
+        }
+        .c{
+            height: 400px;
+            width: 800px;
+            background:rgba(0,0,0,0.2);
+            transform: translate(0px 100px);
+            position: absolute;
+            
+            transition: 1s;
+            left: 100%;
+            bottom: 100%;
+          
+        }
+        .a:hover .c{
+           left: 0%;
+           bottom: 0%;
+        }
+        span{
+            color: aqua;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <div class="a">flate <span>50%</span> off
+        <div class="b"></div>
+        <div class="c"></div>
+    
+    </div>
+
+    
+    
+</body>
+</html>

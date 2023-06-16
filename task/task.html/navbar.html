@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+     }
+        .a{
+            background: aqua;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            color: black;
+           
+        }
+        .b{
+            
+            list-style: none;    
+            padding: 20px 0;
+            display: inline;
+            margin-right: 20px;
+            position: relative;
+            cursor: pointer;
+
+        }
+        .c{
+            list-style: none;
+
+            background:aqua;
+            position: absolute;
+            top:100%;
+            left:0;
+            width: 100px;
+            list-style-type: none;
+            display: none;
+        }
+        .b:hover .c
+            {
+                display: block;
+            }
+            .d{
+                width: 80px;
+                background:aqua;
+                position: absolute;
+                display: none;
+                top:50%;
+                left:100px;
+                list-style-type: none;
+                
+            }
+            .dev:hover .d{
+                display: block;
+            }
+    </style>
+</head>
+<body>
+    <div class="a">
+    <ul>
+        <li class="b">Home</li>
+        <li class="b">About</li>
+
+        <li class="b">Men`s Wear
+            <ul class="c">
+                <li>Wallets</li>
+                <li>Watch</li>
+                <li class="dev">Bags
+                    <ul class="d">
+                        <li>clothes</li>
+                        <li> watch</li>
+                        <li> contact</li>
+                        <li></li>
+                    </ul>
+                </li>
+                <li>Shirts</li>
+                <li>Clothing</li>
+            </ul>
+        </li>
+
+    </ul>
+</div>
+</body>
+</html>

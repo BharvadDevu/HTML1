@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .d{
+            height: 50px;
+            width: 50px;
+            background-color: black;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            margin-top: 100px;
+            margin-left: 100px;
+            transition: 0.1s;
+            transform: scale3d(0);
+            /* transition-timing-function: ease-in; */
+
+        
+        }
+
+        .d:hover{
+
+            content: "";
+            position: absolute;
+            transition-timing-function: ease-in-out;
+             /* transform: skew(6deg); 
+            z-index: -1; */
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0; 
+            background: aqua;
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+
+    <div class="d">
+        <i class="fa fa-truck" aria-hidden="true"></i>
+
+    </div>
+    
+</body>
+</html>

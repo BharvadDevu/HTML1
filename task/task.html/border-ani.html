@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         div
+        {
+            height: 700px;
+            width: 100%;
+            /* background:conic-gradient(#33ccff 0%, #ff99cc 100%); */
+            background: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+
+        }
+        .a{
+            height: 300px;
+            width: 200px; 
+            background: black;  
+            overflow: hidden; position: relative;
+           
+        }
+      
+        .a::after
+        {   content: "";
+            height: 285px;
+            width: 185px;
+            /* background:conic-gradient(#33ccff 10%, #ff99cc 200%); */
+            background: hotpink;
+            position: absolute;
+        }
+        .a::before
+        {   content: "";
+            height: 500px;
+            width: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background:linear-gradient(red,blue,green,darkgoldenrod);
+            transition: 0.9s;  
+            position: absolute;
+            transform: rotate(0deg);
+           
+           
+        }
+        .a:hover::before
+        {
+            transform: rotate(360deg);
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <div>
+        <div class="a"></div>
+    </div>
+</body>
+</html>
